@@ -43,7 +43,6 @@ public class MainActivity extends AppCompatActivity {
             for(int[] winningpo : winningpos)
             {
                 if (currentstate[winningpo[0]] == currentstate[winningpo[1]] && currentstate[winningpo[1]] == currentstate[winningpo[2]] && currentstate[winningpo[0]]!= 2 ){
-
                     activegame = false;
                     String Winner = "RED";
                     if (currentstate[winningpo[0]] == 1){
@@ -72,7 +71,6 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
             }
-
         }
     }
     public void playagain(View view){
